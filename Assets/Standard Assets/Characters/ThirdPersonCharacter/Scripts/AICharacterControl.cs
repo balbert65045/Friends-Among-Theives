@@ -12,7 +12,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public Transform target;                                    // target to aim for
 
 
-        private void Start()
+        private void Awake()
         {
             // get the components on the object we need ( should not be null due to require component so no need to check )
             agent = GetComponentInChildren<UnityEngine.AI.NavMeshAgent>();
